@@ -23,6 +23,8 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"{type(e).__name__}: {e}")
 
-
+@bot.command()
+async def colors(ctx):
+    await ctx.send("For place we use hex colors \n for online converter use \n https://www.color-hex.com/")
 bot.run(os.getenv('token'))
     ## future me pls make database for every type linr levelinf etc level = tinydb("level,db")
